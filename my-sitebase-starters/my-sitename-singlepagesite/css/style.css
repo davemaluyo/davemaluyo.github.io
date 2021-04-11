@@ -122,9 +122,9 @@ a {
     form input[type="submit"] {
      font-size: inherit;
      line-height: 1;
-     background-color: rgba(0,0,255,1);
-     border: 1px solid rgba(0,0,255,1);
-     color: rgba(255,255,255,1);
+     background-color: #F5AD20;
+     border: 1px solid #F5AD20;
+     color: rgba(0,0,0,1);
      padding: 1em 1.5em;
      display: inline-block;
      margin: .5em .5em .5em 0;
@@ -234,6 +234,14 @@ body {
 
 }
 
+    .one-third, .two-thirds {
+    border: 1px solid orange;
+
+    .two-thirds {
+        background-size: cover;
+    }
+}
+
 /* site structure  */
 
 /* site header */
@@ -294,18 +302,28 @@ section {
     padding: 4em 0;
 }
 
+section .row p {
+    color: rgba(0,0,0,1)
+}
+
 /* hero  */
 
 .hero {
     padding: 6em 4%;
-    background-color:rgba(0,0,0,.1);
-    text-align: center
+    text-align: center;
+    background-image: url(../images/blondies-hero.jpg);
+    background-size: cover;
+    
 }
 
 .hero h1, p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.hero p ,h1 {
+    color: rgba(255,255,255,1);
 }
 
 /* toggle nav */
@@ -447,6 +465,22 @@ form input[type="submit"] {
 
 /* custom site CSS */
 
+/* ------ images ------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
 .section-title {
     text-align: center;
     margin-bottom: 3em;
@@ -459,3 +493,31 @@ form input[type="submit"] {
     margin: .5em auto;
     border-bottom: 3px solid rgba(0,0,0,.2);
 }
+
+/* ------ media queries------- */
+
+/* SMALL */
+
+/* MEDIUM */
+@media (min-width: 768px) {
+}
+
+/* LARGE */
+@media (min-width: 1050px) {
+}
+
+/* FOR DEV PURPOSES ONLY */
+
+/* body, *:after, *:before {
+    background: none !important;
+    background-color: rgba(0,0,0,.05) !important;
+    border: 1px solid rgba(0,0,0,.1) !important;
+ }
+ 
+ img, svg, canvas, video {
+     filter: contrast(0%);
+ }  */
+
+ grid-template-rows {
+
+ }

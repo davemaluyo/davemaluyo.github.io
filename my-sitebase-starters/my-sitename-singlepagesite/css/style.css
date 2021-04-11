@@ -237,7 +237,7 @@ body {
     .one-third, .two-thirds {
     border: 1px solid orange;
 
-    .two-thirds {
+    .two-thirds-column {
         background-size: cover;
     }
 }
